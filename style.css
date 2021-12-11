@@ -231,6 +231,10 @@ nav label i{
     font-size: 25px;
     cursor:pointer;
 }
+.img-index
+{
+    width: 400px;
+}
 @media only screen and (max-width : 420px)
 {
     nav 
@@ -267,4 +271,9 @@ nav label i{
     {
         left:0;
     }
+    .img-index
+    {
+        width: 100%;
+    }
+  
 }
