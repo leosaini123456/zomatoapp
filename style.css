@@ -12,7 +12,8 @@ nav
     height: 80px;
     padding:0px 50px;
     align-items: center;
-    background-color: whitesmoke;
+    background-color: #FFFBF7;
+    position: relative;
 }
 nav span
 {
@@ -117,24 +118,15 @@ nav ul li a
 optgroup{
     font-size: 18px;
 }
-
-.container  
-{
-    width: 70%;
-    margin:auto;
-}
 .category
 {
     display: flex;
   
     flex-wrap: wrap ;
     justify-content: space-between;
-}
-.box{
-    width: 23%;
-   
-    margin:10px;
-}
+} #section3 .box{ 
+    margin:10px 0px;
+} 
 
 /* #section3 start */
 #section3
@@ -142,6 +134,7 @@ optgroup{
     padding:50px 0px;
     
 }
+
 #section3 .box img
 {
     width: 100%;
@@ -167,16 +160,15 @@ optgroup{
     /* box-radius: 20px 20px 0px 0px; */
     border-radius: 20px;
     transition: all 1s;
+    width: 100%;
 }
 #section3 h2
 {
    font-size: 30px;
-   margin-left: 10px;
 }
 #section3 p
 {
     font-size: 20px;
-    margin-left: 10px;
 }
 #section3 .box:hover
 {
@@ -188,7 +180,8 @@ optgroup{
 
 #section4 .container
 {
-    display: flex;    
+    display: flex;
+     
 }
 #section4
 {
@@ -221,4 +214,57 @@ optgroup{
 footer
 {
     padding:20px 0px;
+}
+
+nav #check
+{
+    display: none;
+}
+nav label
+{
+    display: none;
+    position: absolute;
+    right: 20px;
+   
+}
+nav label i{
+    font-size: 25px;
+    cursor:pointer;
+}
+@media only screen and (max-width : 420px)
+{
+    nav 
+    {
+        padding:0px 20px;
+        height: 60px;
+    }
+    nav label
+    {
+        display: block;
+    }
+    nav ul
+    {
+        position: absolute;
+        top:62px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.863);
+        left:-100%;
+        height:100vh;
+        transition: all 2s;
+    }
+    nav ul li
+    {
+        display: block;
+        text-align: center;
+        margin:20px 0px;
+    }
+    nav ul li a
+    {
+        color:white;
+    
+    }
+    #check:checked ~ul
+    {
+        left:0;
+    }
 }

@@ -30,7 +30,6 @@
 }
 .sideSection1
 {
-    width: 20%;
     box-shadow: 0px 0px 9px 1px rgba(175, 175, 175, 0.466);
     padding:20px;
 
@@ -54,12 +53,7 @@
     font-size: 20px;
     font-weight: 500;
 }
-.sideSection2
-{
-    width: 70%;
-   
-    
-}
+
 .productbox
 {
     display: flex;
@@ -112,4 +106,10 @@
     font-size: 20px;
     font-weight: 500;
     margin:10px 0px;
+}
+
+.productbox .col-lg-5
+{
+    padding:0;
+    
 }

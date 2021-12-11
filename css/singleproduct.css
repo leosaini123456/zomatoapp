@@ -2,19 +2,6 @@
 {
     padding:50px 0px;
 }
-.container
-{
-    display: flex;
-    justify-content: space-between;
-}
-.image
-{
-    width: 30%;
-}
-.productinfo
-{
-    width: 67%;
-}
 #section1 .content h2
 {
     font-size: 30px;

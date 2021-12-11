@@ -7,11 +7,17 @@
     <title>Zomato App</title>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- Css Files -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     <nav>
+        <input type="checkbox" id="check">
+        <label for="check"><i class="fas fa-bars"></i></label>
         <span><a href="index.html"><i>Zomato</i></a></span>
         <ul>
             <li><a href="">Add Restaurant</a></li>
@@ -50,61 +56,84 @@
         <div class="container">
             <h2>Quick Search</h2>
             <p>Discover Restaurant By Meal</p>
-            <div class="category">
-                <div class="box">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="box">
                     <a href="listing.html"><img src="img/foodImages/pexels-edward-eyer-1049626.jpg" alt=""></a> 
                     <p><a href="listing.html">Food Category 1</a></p> 
+                    </div>
                 </div>
-                <div class="box">
-                    <a href="listing.html"><img src="img/foodImages/pexels-jonathan-borba-2983101.jpg" alt=""></a>
-                    <p><a href="listing.html">Food Category 2</a></p> 
+
+                <div class="col-lg-3">
+                    <div class="box">
+                        <a href="listing.html"><img src="img/foodImages/pexels-jonathan-borba-2983101.jpg" alt=""></a>
+                        <p><a href="listing.html">Food Category 2</a></p> 
+                    </div>
                 </div>
-                <div class="box">
-                    <a href="listing.html"><img src="img/foodImages/pexels-lisa-918327.jpg" alt=""></a>
-                    <p><a href="listing.html">Food Category 3</a></p> 
+                <div class="col-lg-3">
+                    <div class="box">
+                        <a href="listing.html"><img src="img/foodImages/pexels-lisa-918327.jpg" alt=""></a>
+                        <p><a href="listing.html">Food Category 3</a></p> 
+                    </div>
                 </div>
-                <div class="box">
-                    <a href="listing.html"><img src="img/foodImages/pexels-nerfee-mirandilla-3186654.jpg" alt=""></a>
-                    <p><a href="listing.html">Food Category 4</a></p> 
+                <div class="col-lg-3">
+                    <div class="box">
+                        <a href="listing.html"><img src="img/foodImages/pexels-nerfee-mirandilla-3186654.jpg" alt=""></a>
+                        <p><a href="listing.html">Food Category 4</a></p> 
+                    </div>
                 </div>
-                <div class="box">
-                    <a href="listing.html"><img src="img/foodImages/food5.webp" alt=""></a>
-                    <p><a href="listing.html">Food Category 5</a></p> 
+                <div class="col-lg-3">
+                    <div class="box">
+                        <a href="listing.html"><img src="img/foodImages/food5.webp" alt=""></a>
+                        <p><a href="listing.html">Food Category 5</a></p> 
+                    </div>
                 </div>
-                <div class="box">
-                    <a href="listing.html"><img src="img/foodImages/food6.webp" alt=""></a>
-                    <p><a href="listing.html">Food Category 6</a></p> 
+                <div class="col-lg-3">
+                    <div class="box">
+                        <a href="listing.html"><img src="img/foodImages/food6.webp" alt=""></a>
+                        <p><a href="listing.html">Food Category 6</a></p> 
+                    </div>
                 </div>
-                <div class="box">
-                    <a href="listing.html"><img src="img/foodImages/food7.webp" alt=""></a>
-                    <p><a href="listing.html">Food Category 7</a></p> 
+                <div class="col-lg-3">
+                    <div class="box">
+                        <a href="listing.html"><img src="img/foodImages/food7.webp" alt=""></a>
+                        <p><a href="listing.html">Food Category 7</a></p> 
+                    </div>
                 </div>
-                <div class="box">
-                    <a href="listing.html"><img src="img/foodImages/food8.jfif" alt=""></a>
-                    <p><a href="listing.html">Food Category 8</a></p> 
+                <div class="col-lg-3">
+                    
+                    <div class="box">
+                        <a href="listing.html"><img src="img/foodImages/food8.jfif" alt=""></a>
+                        <p><a href="listing.html">Food Category 8</a></p> 
+                    </div>
                 </div>
+                
             </div>
         </div>
     </div>
 
-    <div id="section4">
+ <div id="section4">
         <div class="container">
-            <div>
-                <img src="img/mobile-app-img.webp" alt="" width="400px">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="img/mobile-app-img.webp" alt="" width="400px">
+                </div>
+                <div class="col-lg-8">
+                    <h2>Get The Zomato App</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque nulla dolore reprehenderit possimus consequatur accusamus impedit adipisci atque fuga minus.</p>
+                    <form>
+                        <input type="text" placeholder="Enter Your Email Please">
+                        <button>Share App Link</button>
+                    </form>
+                    <p>Download app from</p>
+                    <img class="app-download" src="img/app-store.webp" alt="">
+                    <img class="app-download" src="img/google-play.webp" alt="">
+                </div>
             </div>
-            <div>
-                <h2>Get The Zomato App</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque nulla dolore reprehenderit possimus consequatur accusamus impedit adipisci atque fuga minus.</p>
-                <form>
-                    <input type="text" placeholder="Enter Your Email Please">
-                    <button>Share App Link</button>
-                </form>
-                <p>Download app from</p>
-                <img class="app-download" src="img/app-store.webp" alt="">
-                <img class="app-download" src="img/google-play.webp" alt="">
-            </div>
+            
+           
         </div>
-    </div>
+    </div> 
     <footer>
         <p style="text-align: center;">Copyright © 2021. All rights reserved with <b>Lovepreet Singh</b></p>
     </footer>
